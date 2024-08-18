@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        /* img {
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+        } */
+
+        #season {
+            position: absolute;
+            top: 49%;
+            left: 43.5%;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 300px;
+            background-color: rgb(224, 81, 181);
+        }
+        
+        .same{
+            border: 2px solid black;
+            height:1000px;
+            width: 1920px;
+        } 
+        #img{
+            background-image: url(https://staticg.sportskeeda.com/editor/2023/12/d7339-17038029603379-1920.jpg);
+            background-repeat: no-repeat;
+        }
+        #timer {
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20%;
+            border: 3px solid black;
+            width: 300px;
+            margin: 500px auto;
+            height: fit-content;
+            color: black;
+            background-color: rgb(233, 10, 10);
+            position: absolute;
+            left: 43.5%;
+            top: 10%;
+        }
+
+        .navbar {
+            background-color: #c3370b;
+            width: 1920px;
+        }
+
+        .navbar {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: black;
+        }
+
+        .search {
+            float: right;
+            padding: 10px 75px;
+            color: black;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 11px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://ff.garena.com/en/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html">About me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" class="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+     <div id="img" class="same">
+    <h1 id="season">New season begins in:</h1>
+    <div id="timer" class="same"></div>
+    <script src="timer.js"></script>
+    </div>
+</body>
+
+</html>
